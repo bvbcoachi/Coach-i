@@ -3,28 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coach-i | Coach</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Coach</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    function navigeerNaarTeam(select) {
+      const keuze = select.value;
+      if (keuze) {
+        window.location.href = keuze + ".html";
+      }
+    }
+  </script>
 </head>
 <body>
+  <header class="topbar">
+    <div class="dropdown-container">
+      <label for="teamSelect">Kies team:</label>
+      <select id="teamSelect" onchange="navigeerNaarTeam(this)">
+        <option value="">-- Selecteer --</option>
+        <option value="o21">O21</option>
+        <option value="o19">O19</option>
+        <option value="o17">O17</option>
+        <option value="o16">O16</option>
+        <option value="o15">O15</option>
+        <option value="o14">O14</option>
+        <option value="o13">O13</option>
+        <option value="o12-1">O12-1</option>
+        <option value="o12-2">O12-2</option>
+      </select>
+    </div>
+  </header>
+
   <div class="container">
-    <aside class="sidebar">
-      <h2>Coach-i</h2>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="visie.html">Visie</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="coach.html">Coach</a></li>
-        </ul>
-      </nav>
-    </aside>
+    <nav class="sidebar">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="visie.html">Visie</a></li>
+        <li><a href="coach.html">Coach</a></li>
+      </ul>
+    </nav>
+
     <main class="content">
-<h2>De Coach</h2><p>Hier vind je meer informatie over jouw persoonlijke coach.</p>    </main>
+      <section class="coach">
+        <h1>De Rol van de Coach</h1>
+        <p>De coach speelt een centrale rol in de ontwikkeling van spelers en het team. Binnen onze visie staat de coach als leider, begeleider en opleider centraal.</p>
+      </section>
+    </main>
   </div>
+
   <footer>
-    <p>&copy; 2025 Coach-i</p>
+    © FC Twente/Heracles Jeugdopleiding
   </footer>
-  <script src="script.js"></script>
 </body>
 </html>
