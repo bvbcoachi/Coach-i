@@ -74,4 +74,31 @@ p {
     text-align: center;
 }
 
+.topbar {
+    background-color: #1A2B3D;
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dropdown-container label {
+    font-weight: bold;
+}
+
+.dropdown-container select {
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+
 .rol
