@@ -1,1 +1,1 @@
-console.log("Welkom op mijn website!");
+console.log("Coach-i website geladen");
